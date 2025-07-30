@@ -1,4 +1,4 @@
-<svg width="550" height="684" viewBox="0 0 550 684" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="550" height="320" viewBox="0 0 550 320" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <style>
     .bubble {
       fill: #e9e9eb;
@@ -60,15 +60,6 @@
 
     .msg-5 {
       animation: wait 11.7s, msg-5 0.2s 11.7s;
-    }
-
-    .typing-6 {
-      opacity: 0;
-      animation: wait 12.5s, fade-in-out 1.5s 12.5s;
-    }
-
-    .msg-6 {
-      animation: wait 14.2s, msg-6 0.2s 14.2s;
     }
 
     @keyframes wait {
@@ -136,22 +127,11 @@
     @keyframes msg-5 {
       0% {
         opacity: 0;
-        transform: translate(10px, 565px);
+        transform: translate(10px, 264px);
       }
       100% {
         opacity: 1;
-        transform: translate(10px, 560px);
-      }
-    }
-
-    @keyframes msg-6 {
-      0% {
-        opacity: 0;
-        transform: translate(10px, 637px);
-      }
-      100% {
-        opacity: 1;
-        transform: translate(10px, 632px);
+        transform: translate(10px, 264px);
       }
     }
 
@@ -297,7 +277,7 @@
   <!-- Work -->
   <g transform="translate(10, 120)" class="msg-3">
     <rect width="510" height="66" rx="18" class="bubble" />
-    <text x="15" y="27">I’m a bioinformatician, who's really into ancient DNA</text>
+    <text x="15" y="27">I’m a bioinformatician, who's really into ancient DNA 🦴🧬</text>
     <text x="15" y="50">and has worked on pop gen, phylogenetics and genomics.</text>
   </g>
 
@@ -327,10 +307,27 @@
     </text>
   </g>
 
+    <!-- typing 5 -->
+  <g transform="translate(10, 264)" class="typing-5">
+    <rect x="8.27246" width="69.7276" height="42" rx="20.9774" class="bubble" />
+    <circle cx="13.591" cy="33.091" r="7.68185" class="bubble" />
+    <circle cx="3.54547" cy="41.9547" r="3.54547" class="bubble" />
+
+    <circle cx="27.4778" cy="20.9773" r="5.02275" fill="#999999">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="42.8411" cy="20.9773" r="5.02275" fill="#999999">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" begin="0.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="58.2054" cy="20.9773" r="5.02275" fill="#999999">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" begin="0.4s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
       <!-- Have a great... -->
-  <g transform="translate(10, 264)" class="msg-4">
+  <g transform="translate(10, 264)" class="msg-5">
     <rect width="260" height="42" rx="18" class="bubble" />
-    <text x="15" y="27">Have a great {todayDay}! <tspan class="emoji">✌🏻</tspan></text>  
+    <text x="15" y="27">Have a great {todayDay}! <tspan class="emoji">✌️</tspan></text>  
   </g>
 
   
